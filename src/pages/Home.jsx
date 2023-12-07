@@ -11,6 +11,7 @@ import 'swiper/css/navigation';
 import { EffectFlip, Pagination, Autoplay, Navigation } from 'swiper/modules';
 import VimeoVideo from '../components/VimeoVideo';
 import { InView } from 'react-intersection-observer';
+import { Parallax, Background } from 'react-parallax';
 
 
 const Home = () => {
@@ -195,7 +196,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="img/SEO.png" alt="" width="70px" />
+  <img src="img/seo.png" alt="" width="70px" />
 </div>
 
 <h2 className="text-xl font-extrabold ">SEO Enhancement  </h2>
@@ -211,7 +212,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="img/Targeted.png" alt="" width="70px"/>
+  <img src="img/targeted.png" alt="" width="70px"/>
 </div>
 
 <h2 className="text-xl font-extrabold ">Targeted PPC Advertising 
@@ -449,6 +450,20 @@ which has been on my list of things I want to do for over 2 years. She is very c
 </section>
 
 
+
+<div className="relative w-full  h-60">
+
+<Parallax className="pill"
+ strength={-400}
+ style={{
+  position: 'absolute',
+  top:"40px",
+  right:"0px"
+  
+}}>
+
+        <Background className="w-screen h-auto"  >
+     
 <section className="flex flex-col p-3 gap-3 bg-yellow-400">
 
 <strong className="text-xl">Partners</strong>
@@ -471,10 +486,84 @@ which has been on my list of things I want to do for over 2 years. She is very c
 
 </section>
 
+           </Background>
 
-<section className="w-full flex flex-col p-4 gap-3">
+
+    </Parallax>
+    </div>
+
+    <section className="w-full flex flex-col p-4 gap-3">
+
+<strong className="text-lg">TELL US MORE</strong>
+<h3 className="text-2xl  text-center mb-5">Let’s discuss your project
+
+</h3>
+
+<form action="w-11/12 flex flex-col gap-5">
+
+  <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="First Name" />
+
+  <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Last Name" />
+  <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Phone" />
+  <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Email" />
+  <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Website" />
+
+  <div className="flex flex-col gap-2">
+    <label className="flex gap-2">
+      <input type="checkbox" name="services" value="Consulting" />
+      Consulting
+    </label>
+
+    <label className="flex gap-2">
+      <input type="checkbox" name="services" value="Content Marketing" />
+      Content Marketing
+    </label>
+
+    <label className="flex gap-2">
+      <input type="checkbox" name="services" value="Email Marketing" />
+      Email Marketing
+    </label>
+
+    <label className="flex gap-2">
+      <input type="checkbox" name="services" value="Digital Ads" />
+      Digital Ads
+    </label>
+
+    <label className="flex gap-2">
+      <input type="checkbox" name="services" value="SEO" />
+      SEO
+    </label>
+
+    <label className="flex gap-2">
+      <input type="checkbox" name="services" value="Brand Management" />
+      Brand Management
+    </label>
+
+    <label className="flex gap-2">
+      <input type="checkbox" name="services" value="Social Media" />
+      Social Media
+    </label>
+
+    <label className="flex gap-2">
+      <input type="checkbox" name="services" value="Web Design" />
+      Web Design
+    </label>
+
+    <label className="flex gap-2">
+      <input type="checkbox" name="services" value="Branding" />
+      Branding
+    </label>
+
+    <label className="flex gap-2">
+      <input type="checkbox" name="services" value="Other" />
+      Other
+    </label>
+  </div>
 
 
+  <textarea name="" id="" cols="30" rows="5" placeholder="Let's us know how we can help you" className="border-2 border-solid border-gray-300 w-full p-8 mt-5"></textarea>
+
+</form>
 
 </section>
 

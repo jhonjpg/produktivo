@@ -21,7 +21,7 @@ const Navbar = () => {
 
 <nav className="spacegray flex w-full justify-between items-center  h-20 fixed z-50 overflow-hidden	">
 
-<Link onClick={() => setShowMenu(false)}  to="/"> <div className="w-28 h-full flex items-center justify-center text-white  scale-105	">  <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
+<Link onClick={() => setShowMenu(false)}  to="produktivo/"> <div className="w-28 h-full flex items-center justify-center text-white  scale-105	">  <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
 </Link>
 <div className=" w-28 flex  justify-center items-center  h-full"> 
 
@@ -68,22 +68,22 @@ const Navbar = () => {
           </li>
           {showServices && (
             <ul className="text-base ml-5 flex flex-col gap-1">
-            <Link onClick={() => setShowMenu(false)}  to="/consultation">  <li>Consultation</li></Link> 
-            <Link onClick={() => setShowMenu(false)} to="/virtual&business&support">   <li>Virtual Business Support</li></Link> 
-            <Link onClick={() => setShowMenu(false)} to="/system&implementation">   <li>System Implementation</li></Link> 
+            <Link onClick={() => setShowMenu(false)}  to="produktivo/consultation">  <li>Consultation</li></Link> 
+            <Link onClick={() => setShowMenu(false)} to="produktivo/virtual&business&support">   <li>Virtual Business Support</li></Link> 
+            <Link onClick={() => setShowMenu(false)} to="produktivo/system&implementation">   <li>System Implementation</li></Link> 
             <li onClick={() => toggleVisibility(setShowMarketing)}>
               Marketing{showMarketing ? ' -' : ' +'}
               </li>
               {showMarketing && (
                 <ul className="text-sm ml-2 flex flex-col gap-1">
-                  <Link onClick={() => setShowMenu(false)}  to="/content&marketing"><li>Content Marketing</li></Link>
+                  <Link onClick={() => setShowMenu(false)}  to="produktivo/content&marketing"><li>Content Marketing</li></Link>
                  
-<Link onClick={() => setShowMenu(false)}  to="/email&marketing">  <li>Email Marketing</li></Link>
-<Link onClick={() => setShowMenu(false)}  to="/digital&ads">   <li>Digital Ads</li></Link>
-                  <Link onClick={() => setShowMenu(false)}  to="/lead&generation">   <li>Lead Generation</li></Link>
+<Link onClick={() => setShowMenu(false)}  to="produktivo/email&marketing">  <li>Email Marketing</li></Link>
+<Link onClick={() => setShowMenu(false)}  to="produktivo/digital&ads">   <li>Digital Ads</li></Link>
+                  <Link onClick={() => setShowMenu(false)}  to="produktivo/lead&generation">   <li>Lead Generation</li></Link>
                 </ul>
               )}
-                         <Link onClick={() => setShowMenu(false)}  to="/social&media">     <li>Social Media</li></Link>
+                         <Link onClick={() => setShowMenu(false)}  to="produktivo/social&media">     <li>Social Media</li></Link>
 
 
   
@@ -95,13 +95,13 @@ const Navbar = () => {
           </li>
           {showResorces && (
                 <ul className="text-base ml-5 flex flex-col gap-1">
-                  <li>Blog</li>
+                 <Link onClick={() => setShowMenu(false)} to="produktivo/blog">  <li>Blog</li>    </Link>
                   <li>Suscribe to Newsletter</li>
                 </ul>
                               )}
 
                 
-<Link onClick={() => setShowMenu(false)}  to="/contact">  <li>Contact Us</li></Link>
+<Link onClick={() => setShowMenu(false)}  to="produktivo/contact">  <li>Contact Us</li></Link>
         </ul>
 
 

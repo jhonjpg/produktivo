@@ -18,6 +18,7 @@ import SocialMedia from '../pages/SocialMedia';
 import LeadGeneration from '../components/LeadGeneration';
 import CookiePolicies from '../components/CookiePolicies';
 import PrivacyPolicy from '../components/PrivacyPolicy';
+import { Blog } from '../pages/Blog';
 
 
 const Auth = () => {
@@ -33,25 +34,23 @@ const Auth = () => {
 
       <Routes>
         <Route index element={<Home  />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/produktivo" element={<Home />} />
 
         {/* <Route path="/about" element={<About />} /> */}
        
-        <Route path="/consultation" element={<Consultation />} />
-        <Route path="/virtual&business&support" element={<VirtualBusinessSupport />} />
-        <Route path="/system&implementation" element={<SystemImplementations />} />
-        <Route path="/content&marketing" element={<ContentMarketing />} />
-        <Route path="/email&marketing" element={<EmailMarketing />} />
-        <Route path="/digital&ads" element={<DigitalAds />} />
-        <Route path="/lead&generation" element={<LeadGeneration />} />
+        <Route path="produktivo/consultation" element={<Consultation />} />
+        <Route path="produktivo/virtual&business&support" element={<VirtualBusinessSupport />} />
+        <Route path="produktivo/system&implementation" element={<SystemImplementations />} />
+        <Route path="produktivo/content&marketing" element={<ContentMarketing />} />
+        <Route path="produktivo/email&marketing" element={<EmailMarketing />} />
+        <Route path="produktivo/digital&ads" element={<DigitalAds />} />
+        <Route path="produktivo/lead&generation" element={<LeadGeneration />} />
 
-        <Route path="/social&media" element={<SocialMedia />} />
-
-
-        <Route path="/cookie&pilicies" element={<CookiePolicies />} />
-        <Route path="/privacy&policy" element={<PrivacyPolicy />} />
+        <Route path="produktivo/social&media" element={<SocialMedia />} />
 
 
+        <Route path="produktivo/cookie&pilicies" element={<CookiePolicies />} />
+        <Route path="produktivo/privacy&policy" element={<PrivacyPolicy />} />
 
 
 
@@ -60,9 +59,8 @@ const Auth = () => {
 
 
 
-
-
-        <Route path="/contact" element={<Contact />} />
+        <Route path="produktivo/blog" element={<Blog />} />
+        <Route path="produktivo/contact" element={<Contact />} />
 
      
         <Route path="*" element={<PageNotFound />} />

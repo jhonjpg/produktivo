@@ -139,7 +139,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="/img/system.png" alt="" width="70px" />
+  <img src="img/system.png" alt="" width="70px" />
 </div>
 
 <h2 className="text-xl font-extrabold ">System Setup and Management </h2>
@@ -154,7 +154,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="/img/content.png" alt="" width="70px" />
+  <img src="img/content.png" alt="" width="70px" />
 </div>
 
 <h2 className="text-xl font-extrabold ">Content Marketing </h2>
@@ -169,7 +169,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="/img/social.png" alt="" width="70px" />
+  <img src="img/social.png" alt="" width="70px" />
 </div>
 
 <h2 className="text-xl font-extrabold ">Social Media Marketing </h2>
@@ -182,7 +182,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="/img/consultation.png" alt="" width="70px"/>
+  <img src="img/consultation.png" alt="" width="70px"/>
 </div>
 
 <h2 className="text-xl font-extrabold ">Marketing Consultation </h2>
@@ -195,7 +195,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="/img/SEO.png" alt="" width="70px" />
+  <img src="img/SEO.png" alt="" width="70px" />
 </div>
 
 <h2 className="text-xl font-extrabold ">SEO Enhancement  </h2>
@@ -211,7 +211,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="/img/Targeted.png" alt="" width="70px"/>
+  <img src="img/Targeted.png" alt="" width="70px"/>
 </div>
 
 <h2 className="text-xl font-extrabold ">Targeted PPC Advertising 
@@ -226,7 +226,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="/img/emaily.png" alt="" width="70px" />
+  <img src="img/emaily.png" alt="" width="70px" />
 </div>
 
 <h2 className="text-xl font-extrabold ">Email Marketing 
@@ -243,7 +243,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="/img/ads.png" alt="" width="70px"/>
+  <img src="img/ads.png" alt="" width="70px"/>
 </div>
 
 <h2 className="text-xl font-extrabold ">Digital Ad Optimization 
@@ -257,7 +257,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="/img/management.png" alt="" width="70px"/>
+  <img src="img/management.png" alt="" width="70px"/>
 </div>
 
 <h2 className="text-xl font-extrabold ">Reputation Management 
@@ -271,7 +271,7 @@ const Home = () => {
 <li className="flex flex-col gap-3 w-11/12 p-5">
 
 <div className="">
-  <img src="/img/virtual.png" alt="" width="70px"/>
+  <img src="img/virtual.png" alt="" width="70px"/>
 </div>
 
 <h2 className="text-xl font-extrabold ">Virtual Assistant Support
@@ -474,24 +474,7 @@ which has been on my list of things I want to do for over 2 years. She is very c
 
 <section className="w-full flex flex-col p-4 gap-3">
 
-<strong className="text-lg">TELL US MORE</strong>
-<h3 className="text-2xl  text-center mb-5">Let’s discuss your project
 
-</h3>
-
-<form action="w-11/12 flex flex-col gap-5">
-
-<input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="First Name" />
-
-
-<input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5"  placeholder="Last Name"/>
-<input type="text"  className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Phone"/>
-<input type="text"  className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Email"/>
-<input type="text"  className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Website"/>
-
-
-
-</form>
 
 </section>
 

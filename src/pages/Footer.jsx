@@ -20,7 +20,7 @@ const Footer = () => {
   return (
 <footer className="spacegray w-full flex flex-col justify-center items-center p-5 gap-5">
 
-<div className="w-28 h-full flex items-center justify-center text-white  scale-150 	">  <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
+<div className="w-28 h-full flex items-center justify-center text-white  scale-150 	">  <img src="./produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
 
 
 <ul className="w-full flex flex-col text-white gap-3 text-lg">

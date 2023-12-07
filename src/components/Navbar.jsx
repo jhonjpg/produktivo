@@ -21,7 +21,7 @@ const Navbar = () => {
 
 <nav className="spacegray flex w-full justify-between items-center  h-20 fixed z-50 overflow-hidden	">
 
-<Link onClick={() => setShowMenu(false)}  to="produktivo/"> <div className="w-28 h-full flex items-center justify-center text-white  scale-105	">  <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
+<Link onClick={() => setShowMenu(false)}  to="produktivo/"> <div className="w-28 h-full flex items-center justify-center text-white  scale-105	">  <img src="./produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
 </Link>
 <div className=" w-28 flex  justify-center items-center  h-full"> 
 
@@ -58,7 +58,7 @@ const Navbar = () => {
 
 <nav id="sideMenu" className={`sideMenu spacegray w-64 fixed h-screen flex flex-col items-center justify-center z-40 ${showMenu ? 'open' : ''}`}>
 
-<div className="w-10/12	 h-28 scale-105"> <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
+<div className="w-10/12	 h-28 scale-105"> <img src="./produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
 
 <ul className="text-white text-lg flex flex-col gap-5">
           <li className="mb-4">Client Hub</li>

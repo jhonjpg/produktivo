@@ -23,26 +23,26 @@ const Footer = () => {
 <div className="w-28 h-full flex items-center justify-center text-white  scale-150 md:w-24 	">  <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
 
 
-<ul className="w-full flex flex-col text-white gap-3 text-lg md:w-40 ">
+<ul className="w-full flex flex-wrap flex-col text-white gap-3 text-lg md:w-40 ">
 
 <strong className="text-yellow-400 w-full text-xl ">Site Menu</strong>
 
-<Link>Services</Link>
-<Link>Resources</Link>
-<Link>Contact Us</Link>
+<Link >Services</Link>
+<Link >Resources</Link>
+<Link >Contact Us</Link>
 
-<Link to="/cookie&pilicies">Cookie Policies
+<Link  to="/cookie&pilicies">Cookie Policies
 </Link> 
-<Link to="/privacy&policy
+<Link  to="/privacy&policy
 ">Privacy Policy
 </Link> 
 
 </ul>
 
 
-<ul className="w-full flex flex-wrap justify-between items-center text-white gap-3 text-lg md:w-40 ">
+<ul className="w-full flex flex-col flex-wrap justify-between items-start text-white gap-3 text-lg md:w-40 ">
 
-<strong className="text-yellow-400 w-full text-xl text-center ">Services</strong>
+<strong className="text-yellow-400 w-full text-xl  ">Services</strong>
 
 <Link>Consultation</Link>
 <Link>Virtual Business Support</Link>

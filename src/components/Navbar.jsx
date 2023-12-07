@@ -92,7 +92,7 @@ const Navbar = () => {
 <div className="w-10/12	 h-28 scale-105"> <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
 
 <ul className="text-white text-lg flex flex-col gap-5">
-<Link onClick={() => setShowMenu(false)}  to="produktivo/">   <li className="mb-4">Home</li></Link> 
+<Link onClick={() => setShowMenu(false)}  to="/produktivo">   <li className="mb-4">Home</li></Link> 
 
              <li onClick={() => toggleVisibility(setShowServices)}>
             Services{showServices ? ' -' : ' +'}

@@ -1,0 +1,503 @@
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-flip';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { EffectFlip, Pagination, Autoplay, Navigation } from 'swiper/modules';
+import VimeoVideo from '../components/VimeoVideo';
+import { InView } from 'react-intersection-observer';
+
+
+const Home = () => {
+
+
+  return (
+
+    <>
+
+
+    <section  className=" homec w-screen h-screen flex  justify-evenly items-center relative overflow-hidden">
+      
+<div id="home" className="absolute z-10"></div>
+
+<div className="relative text-3xl z-30 mt-30 text-start pl-2 w-full text-white">
+    Marketing for a <span className="font-extrabold">new generation</span>
+
+
+  <div className="videovimeo flex items-center justify-center   w-full  overflow-hidden  h-72 z-20">
+  <VimeoVideo/>
+  </div>
+  </div>
+
+
+    </section>
+
+
+    <InView triggerOnce="false">
+    {({ inView, ref, entry }) => (
+
+<section ref={ref} className={inView ? 'animationUp w-screen h-92 bg-gray-50 flex flex-col gap-5 p-5 bg-gray-50 opacity-1 ' : 'w-screen h-92 bg-gray-50 flex flex-col gap-5 p-5 bg-gray-50 opacity-0'}>
+
+
+  <h3 className="font-extrabold	">DIGITAL SOLUTIONS FOR THE MODERN BUSINESS</h3>
+
+  <h1 className="text-3xl ">We help SMEs 10x their sales through data-driven digital strategies.
+</h1>
+
+
+<p>Our team, a dynamic collective of remote professionals specializing in content creation, digital marketing, and business solutions, thrives on diversity and innovation. Rejecting the 'one-size-fits-all' approach, we deliver comprehensive consulting, digital marketing, creative content creation, and system solutions services tailored to your unique business needs. That will empower your company to make the right decisions to attract the best customers. If you’re looking for a traditional marketing agency, you’ve come to the wrong place. Produktivo is for those ready to embrace the future of digital engagement and client interaction.
+
+</p>
+</section>
+
+)}
+</InView>
+
+<section>
+
+  <Swiper
+        effect={'flip'}
+        grabCursor={true}
+        pagination={true}
+        navigation={false}
+        modules={[EffectFlip, Pagination, Autoplay]}
+        autoplay={{ delay: 7000 }} // Configuración del intervalo de autoplay en milisegundos (4 segundos)
+
+        className="mySwiper"
+      >
+        <SwiperSlide className="h-auto mb-3 overflow-hidden">
+<div className="flex flex-col gap-3 justify-evenly items-center  w-full h-full gap-3 p-4">
+
+<h4 className="justify-self-start	text-4xl w-full text-start">Steps:  <span className="text-yellow-400">01</span></h4> 
+
+<ul>
+
+  <li className="text-2xl w-full text-center mb-5 font-bold		">Insight Gathering </li>
+  <li className="text-lg text-gray-400 mb-3">Step 1: We dive deep into understanding your core audience - who they are, their needs, and where they engage. At Produktivo, we believe in the power of informed insights to drive successful digital strategies.</li>
+  <div className="w-50 h-auto  overflow-hidden "> <img src="./img/witness/1.png"  className="w-full h-full object-cover" alt="" /></div>
+
+</ul>
+
+</div>
+
+        </SwiperSlide>
+        <SwiperSlide className="h-auto mb-3 overflow-hidden">
+
+        <div className="flex flex-col gap-3 justify-evenly items-center  w-full h-full gap-3 p-4">
+
+<h4 className="justify-self-start	text-4xl w-full text-start">Steps:  <span className="text-yellow-400">02</span></h4> 
+
+<ul>
+
+  <li className="text-2xl w-full text-center mb-5 font-bold		">Strategic Development </li>
+  <li className="text-lg text-gray-400 mb-3">Step 2: At Produktivo, we craft tailored strategies focused not just on attracting leads but on converting them into loyal customers. Our approach goes beyond the initial sale, emphasizing customer retention and long-term loyalty.</li>
+  <div className="w-50 h-auto  overflow-hidden "> <img src="./img/witness/2.png"  className="w-full h-full object-cover" alt="" /></div>
+
+</ul>
+
+</div>
+    
+        </SwiperSlide>
+        <SwiperSlide className="h-auto mb-3 overflow-hidden">
+
+        <div className="flex flex-col gap-3 justify-evenly items-center  w-full h-full gap-3 p-4">
+
+<h4 className="justify-self-start	text-4xl w-full text-start">Steps:  <span className="text-yellow-400">03</span></h4> 
+
+<ul>
+
+  <li className="text-2xl w-full text-center mb-5 font-bold		">Execution Excellence </li>
+  <li className="text-lg text-gray-400 mb-3"> Step 3: We provide personalized consultation for each unique strategy, supported by our skilled team specializing in both content creation, system solutions and digital marketing. With Produktivo, every implementation is a step towards achieving your brand's digital aspirations.</li>
+
+  <div className="w-50 h-auto  overflow-hidden "> <img src="./img/witness/3.png"  className="w-full h-full object-cover" alt="" /></div>
+
+</ul>
+
+</div>
+       </SwiperSlide>
+       
+      </Swiper>
+
+
+  
+</section>
+
+
+<InView triggerOnce="false">
+    {({ inView, ref, entry }) => (
+
+<section ref={ref} className={inView ? 'services' : ''}>
+
+
+  <ul className="w-full p-1">
+
+<li className="flex flex-col gap-3 w-11/12 p-5">
+
+<div className="">
+  <img src="/img/system.png" alt="" width="70px" />
+</div>
+
+<h2 className="text-xl font-extrabold ">System Setup and Management </h2>
+<p className="text-gray-400">Master your operational efficiency! We oversee the implementation and management of CRM, digital tools, project management tools, and team coordination, ensuring your business runs like a well-oiled machine.
+
+
+</p>
+
+</li>
+
+
+<li className="flex flex-col gap-3 w-11/12 p-5">
+
+<div className="">
+  <img src="/img/content.png" alt="" width="70px" />
+</div>
+
+<h2 className="text-xl font-extrabold ">Content Marketing </h2>
+<p className="text-gray-400">Create, publish, and promote compelling content. We focus on generating more traffic and building a loyal community around your brand.
+
+</p>
+
+</li>
+
+
+
+<li className="flex flex-col gap-3 w-11/12 p-5">
+
+<div className="">
+  <img src="/img/social.png" alt="" width="70px" />
+</div>
+
+<h2 className="text-xl font-extrabold ">Social Media Marketing </h2>
+<p className="text-gray-400">Develop and manage high-impact social campaigns. We focus on cultivating a dedicated customer base, turning followers into fans.
+</p>
+
+</li>
+
+
+<li className="flex flex-col gap-3 w-11/12 p-5">
+
+<div className="">
+  <img src="/img/consultation.png" alt="" width="70px"/>
+</div>
+
+<h2 className="text-xl font-extrabold ">Marketing Consultation </h2>
+<p className="text-gray-400">We meticulously develop marketing strategies that cut through the noise, targeting potential clients efficiently to bring in high-quality leads and drive significant conversions.
+</p>
+
+</li>
+
+
+<li className="flex flex-col gap-3 w-11/12 p-5">
+
+<div className="">
+  <img src="/img/SEO.png" alt="" width="70px" />
+</div>
+
+<h2 className="text-xl font-extrabold ">SEO Enhancement  </h2>
+<p className="text-gray-400">Enhance your online visibility with our precision-driven SEO services. Our approach is designed to increase your website traffic, draw in more customers, and boost your online presence.
+
+
+
+</p>
+
+</li>
+
+
+<li className="flex flex-col gap-3 w-11/12 p-5">
+
+<div className="">
+  <img src="/img/Targeted.png" alt="" width="70px"/>
+</div>
+
+<h2 className="text-xl font-extrabold ">Targeted PPC Advertising 
+
+</h2>
+<p className="text-gray-400">Get your brand at the forefront of Google’s search results, specifically tailored to your ideal search phrases.
+</p>
+
+</li>
+
+
+<li className="flex flex-col gap-3 w-11/12 p-5">
+
+<div className="">
+  <img src="/img/emaily.png" alt="" width="70px" />
+</div>
+
+<h2 className="text-xl font-extrabold ">Email Marketing 
+</h2>
+<p className="text-gray-400">Transform casual visitors into dedicated fans. We specializes in crafting personalized email content that resonates, attracts, and engages your target audience effectively.
+
+</p>
+
+</li>
+
+
+
+
+<li className="flex flex-col gap-3 w-11/12 p-5">
+
+<div className="">
+  <img src="/img/ads.png" alt="" width="70px"/>
+</div>
+
+<h2 className="text-xl font-extrabold ">Digital Ad Optimization 
+</h2>
+<p className="text-gray-400">Capture your target audience's attention with curated digital ad strategies. Increase website traffic and conversions by getting noticed on various social media platforms.
+</p>
+
+</li>
+
+
+<li className="flex flex-col gap-3 w-11/12 p-5">
+
+<div className="">
+  <img src="/img/management.png" alt="" width="70px"/>
+</div>
+
+<h2 className="text-xl font-extrabold ">Reputation Management 
+</h2>
+<p className="text-gray-400">Take charge of your online presence with Produktivo. We help you manage critical aspects of your reputation, including reviews, listings, and social media engagement.
+
+</p>
+
+</li>
+
+<li className="flex flex-col gap-3 w-11/12 p-5">
+
+<div className="">
+  <img src="/img/virtual.png" alt="" width="70px"/>
+</div>
+
+<h2 className="text-xl font-extrabold ">Virtual Assistant Support
+</h2>
+<p className="text-gray-400">Our dedicated team of virtual assistants will handle your administrative tasks, manage schedules, and customer support, freeing you to focus on growing your brand and nurturing customer relationships.
+
+
+</p>
+
+</li>
+
+
+
+  </ul>
+</section>
+
+
+)}
+</InView>
+
+
+
+<InView triggerOnce="false">
+    {({ inView, ref, entry }) => (
+      <section ref={ref} className={inView ? ' animationUp spacegray w-screen h-screen flex flex-col w-full items-center p-3 pt-10 gap-2 relative text-white ' : 'spacegray w-screen h-screen flex flex-col w-full items-center p-3 pt-10 gap-2 relative text-white  opacity-0'}>
+
+<h3 className="font-extrabold text-xl	">MAKE THE RIGHT DECISION</h3>
+
+<h4 className="text-2xl mb-5 ">Let’s start on your project together  
+
+</h4>
+
+<button className="bg-yellow-400 p-2 rounded-lg w-32 text-black">Get in touch
+
+</button>
+
+
+<div className="absolute w-full h-72 top-60">
+
+  <img className="w-full h-full object-contain" src="world.png" alt="" />
+</div>
+
+<strong className="w-full text-lg text-center mt-60 z-30">TRUSTED BY THE BEST CLIENTS</strong>
+
+<ul className="bestClient w-full flex flex-wrap mt-3 gap-8 z-20 uppercase font-extrabold text-lg justify-around bg-gray-800/25">
+
+<li className="w-24 h-30 bg-white overflow-hidden"><img src="img/clients/client1.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 bg-black"><img src="img/clients/client2.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 bg-white"><img src="img/clients/client3.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30"><img src="img/clients/client4.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 bg-white p-1"><img src="img/clients/client5.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30"><img src="img/clients/client6.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 bg-white"><img src="img/clients/client7.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 bg-black"><img src="img/clients/client8.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 p-1 bg-white"><img src="img/clients/client9.png" className="w-full h-full object-contain" alt="" /></li>
+{/* <li className="w-24 h-30 bg-whites"><img src="img/clients/client10.png" className="w-full h-full object-contain" alt="" /></li> */}
+
+</ul>
+</section>
+
+
+)}
+</InView>
+
+
+
+<section className="testimonials spacegray mt-1 flex flex-col text-white p-5 gap-3 overflow-hidden">
+  <strong>TESTIMONIALS </strong>
+
+
+
+  <InView triggerOnce="false">
+    {({ inView, ref, entry }) => (
+  <h6  ref={ref} className={inView ? 'animationUp text-yellow-400 text-2xl' : 'text-yellow-400 text-2xl  opacity-0'}>What our Clients says:  </h6>
+
+
+  )}
+</InView>
+
+  <Swiper
+        effect={'flip'}
+        grabCursor={true}
+        pagination={false}
+        navigation={true}
+        modules={[ Pagination, Navigation]}
+        autoplay={{ delay: 7000 }} // Configuración del intervalo de autoplay en milisegundos (4 segundos)
+
+        className="mySwiper w-screen"
+      >
+        <SwiperSlide className="w-full h-auto flex flex-col justify-around">
+
+
+<p className="mb-5 p-1 w-11/12">I had the pleasure of working closely with Sue as my VA. Sue consistently demonstrated exceptional organizational skills, high productivity, and a strong commitment to delivering good-quality work. 
+
+One of the standout qualities that impressed me the most was Sue's ability to adapt to new tasks and challenges quickly. 
+
+Beyond her technical skills, Sue is a proactive problem solver and an excellent communicator. She kept me updated on progress, anticipated needs, and provided valuable suggestions that improved our overall workflow. 
+
+Her contributions have made a significant impact on my productivity and allowed me to focus on what matters most in my business.
+
+I highly recommend Sue to anyone seeking a reliable VA.</p>
+
+
+
+<div className="w-full">
+<strong className="text-yellow-400 ">Tromp Attorneys
+
+</strong>
+  <img src="comas.png" alt="" width="80px" />
+</div>
+
+        </SwiperSlide>
+
+        <SwiperSlide className=" w-full h-auto flex flex-col justify-around">
+
+
+<p className="mb-5 p-1 w-11/12">It's been 1 year of me having Sue as a virtual assistant in my social media marketing agency called, Crab Social, and what a pleasant ride it has been. Sue is super hands on, getting things done faster than I ever imagined possible. She thinks in solutions for whatever challenge you might have. In the one year that we've worked together she has automated my business helping me take it to the next level and thanks to her we've created and launched a social media awareness digital course called Konsiente, 
+which has been on my list of things I want to do for over 2 years. She is very communicative every step of the way and always willing to explore new areas even if she hasn't done it before.
+ She works very structured, is very pro-active in thinking ahead, takes action right away where possible and is knowledgeable in a lot of different business areas. I would 10/10 recommend any entrepreneur or business owner looking to work more efficient and take their business to the next level to hire her as she is worth every penny. 
+
+</p>
+
+
+
+<div className="w-full">
+<strong className="text-yellow-400 ">CrabSocials
+
+</strong>
+  <img src="comas.png" alt="" width="80px" />
+</div>
+
+        </SwiperSlide>
+      
+      
+   
+      </Swiper>
+
+
+
+</section>
+
+
+
+  <section className="overflow-hidden w-full">
+<InView triggerOnce="false">
+    {({ inView, ref, entry }) => (
+
+
+<div ref={ref} className={inView ? 'animationRight flex flex-col p-3 gap-3' : ''}>
+
+
+<strong className="text-xl">PRODUKTIVO CLIENT PORTAL </strong>
+<h3 className="text-2xl">All-in-One<span className="font-extrabold"> Management</span> and Insights<span className="font-extrabold"> at Your</span> Fingertips
+
+</h3>
+
+<p className="mb-5 text-gray-400">Our digital marketing solutions are built round your business. Our team work transparently, giving you control over your marketing activities. The Produktivo Client Portal is your one-stop hub for managing your brand's online presence and tasks. This intuitive platform provides access to all your digital tools, streamlines brand management, and delivers real-time performance analytics, ensuring you're always in the driver's seat of your digital journey.
+
+</p>
+
+
+<div className="w-full h-72">
+
+<img src="marketing.jpeg" alt=""  className="w-full h-full object-cover"/>
+
+
+</div>
+
+
+
+</div>
+)}
+</InView>
+
+</section>
+
+
+<section className="flex flex-col p-3 gap-3 bg-yellow-400">
+
+<strong className="text-xl">Partners</strong>
+<h3 className="text-2xl text-center">All Trusted Brands
+</h3>
+
+<ul className="w-full flex flex-wrap p-8 gap-8 justify-between text-xl items-center font-bold">
+    <li className="w-24 h-30 p-1 bg-white"><img src="img/tools/tools1.png" className="w-full h-full object-contain" alt="" /></li>
+    <li className="w-24 h-30 p-1 bg-white"><img src="img/tools/tools2.png" className="w-full h-full object-contain" alt="" /></li>
+    <li className="w-24 h-30 p-1 bg-white"><img src="img/tools/tools3.png" className="w-full h-full object-contain" alt="" /></li>
+    <li className="w-24 h-30 p-1 bg-white"><img src="img/tools/tools4.png" className="w-full h-full object-contain" alt="" /></li>
+
+    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700">Constant Contact</li>
+    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-center text-gray-700">Google</li>
+    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700">Facebook</li>
+    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700">Instagram</li>
+    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700">Dubsado</li>
+    <li className="w-1/3 font-extrabold p-1 bg-white text-sm text-center text-gray-700">Honeybook</li>
+  </ul>
+
+</section>
+
+
+<section className="w-full flex flex-col p-4 gap-3">
+
+<strong className="text-lg">TELL US MORE</strong>
+<h3 className="text-2xl  text-center mb-5">Let’s discuss your project
+
+</h3>
+
+<form action="w-11/12 flex flex-col gap-5">
+
+<input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="First Name" />
+
+
+<input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5"  placeholder="Last Name"/>
+<input type="text"  className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Phone"/>
+<input type="text"  className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Email"/>
+<input type="text"  className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Website"/>
+
+
+
+</form>
+
+</section>
+
+</>
+
+    )
+}
+
+export default Home

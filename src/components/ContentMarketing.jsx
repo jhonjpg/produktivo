@@ -60,18 +60,18 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 
 
 
-<section className="  flex flex-col p-5 justify-center items-center gap-5">
+<section className="  flex flex-col p-5 justify-center items-center gap-1 md:flex-wrap md:flex-row md:items-start ">
 
 
-<h4 className="text-xl">We Deliver
+<h4 className="text-xl w-full">We Deliver
 </h4>
 
 
+
+
+<ol className="flex flex-col p-6 gap-1 text-black md:w-60">
+
 <strong>	Social Content</strong>
-
-
-<ol className="flex flex-col p-6 gap-1 text-black">
-
 
 
 <li className="list-disc p-3">Hashtag research</li>
@@ -83,12 +83,12 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 
 
 
+
+
+<ol className="flex flex-col p-6 gap-1 text-black md:w-60">
+
 <strong>	Newsletter
 </strong>
-
-
-<ol className="flex flex-col p-6 gap-1 text-black">
-
 
 
 <li className="list-disc p-3">Attention-grabbing headline</li>
@@ -105,12 +105,12 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 
 
 
+
+<ol className="flex flex-col p-6 gap-1 text-black md:w-60 ">
+
+
 <strong>	Weekly Blogs
 </strong>
-
-
-<ol className="flex flex-col p-6 gap-1 text-black w-full ">
-
 
 
 <li className="list-disc p-3">Topic ideation
@@ -135,12 +135,12 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 
 
 
+<ol className="flex flex-col p-6 gap-1 text-black md:w-60 ">
+
 <strong>	Product Descriptions
 
 </strong>
 
-
-<ol className="flex flex-col p-6 gap-1 text-black w-full ">
 
 
 
@@ -162,13 +162,13 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 
 
 
+<ol className="flex flex-col p-6 gap-1 text-black md:w-60 ">
+
+
 <strong>	Landing Pages & Funnels
 
 
 </strong>
-
-
-<ol className="flex flex-col p-6 gap-1 text-black w-full ">
 
 
 

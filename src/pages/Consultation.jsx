@@ -21,53 +21,56 @@ const Consultation = () => {
         </section>
         
 
-<section className="flex flex-col p-3 gap-3">
+        <section className="flex flex-col p-3 gap-3  md:justify-center items-center relative overflow-hidden md:flex-wrap ">
 
-<p className="mb-5 ">At Produktivo, our enthusiasm and results-driven approach are matched by our extensive experience across various industry verticals. We understand that in today’s dynamic digital landscape, it’s not just about marketing; it’s also about robust digital systems and seamless integration. Continuous adaptation is key. Whether it's crafting a comprehensive digital strategy from scratch, enhancing your existing marketing efforts, or implementing efficient digital systems, Produktivo is dedicated to refreshing and optimizing your digital footprint for the best results possible.
+<p className="mb-5 md:w-1/2 flex">At Produktivo, our enthusiasm and results-driven approach are matched by our extensive experience across various industry verticals. We understand that in today’s dynamic digital landscape, it’s not just about marketing; it’s also about robust digital systems and seamless integration. Continuous adaptation is key. Whether it's crafting a comprehensive digital strategy from scratch, enhancing your existing marketing efforts, or implementing efficient digital systems, Produktivo is dedicated to refreshing and optimizing your digital footprint for the best results possible.
 
 </p>
+<div className="w-full flex flex-col p-3 justify-center items-start gap-4 md:flex-row"><div className="w-full flex flex-col md:w-1/3 ">
+
 
 <strong className="text-xl">WHY PARTNER WITH US? 
 
 </strong>
-
 <p className="mb-5 text-gray-400">Gain immediate access to our dedicated team, deeply immersed in the realms of digital marketing and system integration. Consider Produktivo as an integral extension of your business and marketing team. We are here to bridge any knowledge gaps, infuse our specialized skills into your endeavors, and drive enhanced outcomes for all your digital and marketing campaigns.
 
 
 </p>
 
+</div>
 
 
-<div className="w-full h-72">
+<div className="w-full h-72 md:w-1/3">
 
 <img src="marketin2.jpg" alt=""  className="w-full h-full object-cover"/>
 
 
+</div>
 </div>
 
 
 
 </section>
 
-<section className=" spacegray flex flex-col p-5 justify-center items-center gap-3">
+<section className=" spacegray flex flex-col p-5 justify-center items-center gap-3 md:w-1/2 md:float-left">
 
 
 <strong className="text-xl text-yellow-400">Recognize Any of These Challenges ?
 
 </strong>
 
-<ul className="flex flex-col p-6 gap-1 text-white">
+<ul className="flex flex-col p-6 gap-1 text-white  md:flex-row md:flex-wrap md:w-full gap-6">
 
 
 
-<li className="list-disc p-3">In search of an all-encompassing marketing strategy that effectively spans across every channel and touchpoint.</li>
-  <li className="list-disc p-3">Facing challenges with a brand presence that’s not performing as expected on various marketing channels.</li>
-  <li className="list-disc p-3">Finding your brand a step behind in crucial search engine rankings.</li>
-  <li className="list-disc p-3">Struggling to convert website visitors into solid, qualified sales leads.</li>
-  <li className="list-disc p-3">Experiencing underwhelming returns on your inbound marketing efforts.</li>
-  <li className="list-disc p-3">Dealing with a marketing strategy that feels incomplete and lacks cohesion across essential channels and touchpoints.</li>
-  <li className="list-disc p-3">Need a robust system in place that enhances the overall customer experience and journey.</li>
-  <li className="list-disc p-3">Looking to retain clients through high-quality, reliable systems that ensure seamless interactions and transactions.</li>
+<li className="list-disc p-3md:w-30">In search of an all-encompassing marketing strategy that effectively spans across every channel and touchpoint.</li>
+  <li className="list-disc p-3md:w-30">Facing challenges with a brand presence that’s not performing as expected on various marketing channels.</li>
+  <li className="list-disc p-3md:w-30">Finding your brand a step behind in crucial search engine rankings.</li>
+  <li className="list-disc p-3md:w-30">Struggling to convert website visitors into solid, qualified sales leads.</li>
+  <li className="list-disc p-3md:w-30">Experiencing underwhelming returns on your inbound marketing efforts.</li>
+  <li className="list-disc p-3md:w-30">Dealing with a marketing strategy that feels incomplete and lacks cohesion across essential channels and touchpoints.</li>
+  <li className="list-disc p-3md:w-30">Need a robust system in place that enhances the overall customer experience and journey.</li>
+  <li className="list-disc p-3md:w-30">Looking to retain clients through high-quality, reliable systems that ensure seamless interactions and transactions.</li>
 
 
 
@@ -81,7 +84,7 @@ const Consultation = () => {
 
 
 
-<section className="  flex flex-col p-5 justify-center items-center gap-5">
+<section className="  flex flex-col p-5 justify-center items-center gap-5 md:w-1/2 ">
 
 
 <strong className="text-xl">SCHEDULE A CONSULTATION
@@ -103,7 +106,7 @@ const Consultation = () => {
 </section>
 
 
-<section className="  flex flex-col p-5 justify-center items-center gap-3">
+<section className="  flex flex-col p-5 justify-center items-center gap-3 w-full">
 
 
 <strong className="text-2xl ">Discovery Call

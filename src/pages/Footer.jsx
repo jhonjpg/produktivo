@@ -18,12 +18,12 @@ const Footer = () => {
   }, []); // El efecto se ejecuta solo una vez al montar el componente
 
   return (
-<footer className="spacegray w-full flex flex-col justify-center items-center p-5 gap-5">
+<footer className="spacegray w-full flex flex-col justify-center items-center p-5 gap-5 md:flex-row md:flex-wrap justify-around items-start">
 
-<div className="w-28 h-full flex items-center justify-center text-white  scale-150 	">  <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
+<div className="w-28 h-full flex items-center justify-center text-white  scale-150 md:w-24 	">  <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
 
 
-<ul className="w-full flex flex-col text-white gap-3 text-lg">
+<ul className="w-full flex flex-col text-white gap-3 text-lg md:w-40 ">
 
 <strong className="text-yellow-400 w-full text-xl ">Site Menu</strong>
 
@@ -40,7 +40,7 @@ const Footer = () => {
 </ul>
 
 
-<ul className="w-full flex flex-wrap justify-between items-center text-white gap-3 text-lg">
+<ul className="w-full flex flex-wrap justify-between items-center text-white gap-3 text-lg md:w-40 ">
 
 <strong className="text-yellow-400 w-full text-xl text-center ">Services</strong>
 
@@ -54,7 +54,7 @@ const Footer = () => {
 
 </ul>
 
-<div className="w-full flex flex-col gap-3">
+<div className="w-full flex flex-col gap-3 md:w-40">
 
 
 <ul className="w-full flex flex-wrap justify-center items-center text-white gap-3 text-lg">
@@ -68,8 +68,10 @@ const Footer = () => {
 
 </ul>
 
+</div>
 
-<p className="w-full text-white mt-5 text-sm mb-5">
+
+<p className="w-full text-white mt-5 text-sm mb-5 w-full">
         Serving you with ❤️ from: {locations[locationIndex]}
       </p>
 
@@ -77,8 +79,6 @@ const Footer = () => {
       <p className="text-xs text-white">© 2023 Produktivo | Digital Solutions for the Modern Business
 
 </p>
-</div>
-
 
 </footer>  )
 }

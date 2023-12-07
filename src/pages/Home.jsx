@@ -8,10 +8,12 @@ import 'swiper/css/effect-flip';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { EffectFlip, Pagination, Autoplay, Navigation } from 'swiper/modules';
+import {  Pagination, Navigation } from 'swiper/modules';
 import VimeoVideo from '../components/VimeoVideo';
 import { InView } from 'react-intersection-observer';
 import { Parallax, Background } from 'react-parallax';
+import MySwiper from '../components/MySwiper';
+import Shapes from '../components/Shapes';
 
 
 const Home = () => {
@@ -26,11 +28,13 @@ const Home = () => {
       
 <div id="home" className="absolute z-10"></div>
 
-<div className="relative text-3xl z-30 mt-30 text-start pl-2 w-full text-white">
-    Marketing for a <span className="font-extrabold">new generation</span>
+<div className="relative text-3xl z-30 mt-30 text-start pl-2 w-full text-white md:flex justify-center text-4xl w-1/2 ">
 
 
-  <div className="videovimeo flex items-center justify-center   w-full  overflow-hidden  h-72 z-20">
+   <p className="text-start w-full md:w-1/3"> Marketing for a <span className="font-extrabold">new generation</span></p>
+
+
+  <div className="videovimeo flex items-center justify-center   w-full  overflow-hidden  h-72 z-20 md:w-1/2 md:scale-150">
   <VimeoVideo/>
   </div>
   </div>
@@ -42,89 +46,64 @@ const Home = () => {
     <InView triggerOnce="false">
     {({ inView, ref, entry }) => (
 
-<section ref={ref} className={inView ? 'animationUp w-screen h-92 bg-gray-50 flex flex-col gap-5 p-5 bg-gray-50 opacity-1 ' : 'w-screen h-92 bg-gray-50 flex flex-col gap-5 p-5 bg-gray-50 opacity-0'}>
+<section ref={ref} className={inView ? 'animationUp w-screen h-92 bg-gray-50 flex flex-col gap-5 p-5 bg-gray-50 opacity-1 relative overflow-hidden ' : 'w-screen h-92 bg-gray-50 flex flex-col gap-5 p-5 bg-gray-50 opacity-0'}>
 
 
-  <h3 className="font-extrabold	">DIGITAL SOLUTIONS FOR THE MODERN BUSINESS</h3>
+  <h3 className="font-extrabold	z-20 md:text-3xl">DIGITAL SOLUTIONS FOR THE MODERN BUSINESS</h3>
 
-  <h1 className="text-3xl ">We help SMEs 10x their sales through data-driven digital strategies.
+  <h1 className="text-3xl z-20 md:w-1/2 text-5xl">We help <span className="font-extrabold	">SMEs 10x their sales </span> through data-driven digital strategies.
 </h1>
 
 
-<p>Our team, a dynamic collective of remote professionals specializing in content creation, digital marketing, and business solutions, thrives on diversity and innovation. Rejecting the 'one-size-fits-all' approach, we deliver comprehensive consulting, digital marketing, creative content creation, and system solutions services tailored to your unique business needs. That will empower your company to make the right decisions to attract the best customers. If you’re looking for a traditional marketing agency, you’ve come to the wrong place. Produktivo is for those ready to embrace the future of digital engagement and client interaction.
+<p className=" z-20 md:w-1/2 text-xl">Our team, a dynamic collective of remote professionals specializing in content creation, digital marketing, and business solutions, thrives on diversity and innovation. Rejecting the 'one-size-fits-all' approach, we deliver comprehensive consulting, digital marketing, creative content creation, and system solutions services tailored to your unique business needs. That will empower your company to make the right decisions to attract the best customers. If you’re looking for a traditional marketing agency, you’ve come to the wrong place. Produktivo is for those ready to embrace the future of digital engagement and client interaction.
 
 </p>
+
+
+<Parallax className="w-full h-screen z-10 md:relative"
+ strength={200}
+ style={{
+  position: 'absolute',
+  top:"-50px",
+  right:"0px"
+  
+}}>
+   
+<Background className="w-screen h-full  relative top-50 flex  relative  md:w-full md:h-full md:left-0 z-10"  >
+     
+ {/* <div className="globo w-60 h-72 relative right-10 top-40 md:w-full left-60  ">  <img src="/globos.png" className="w-full h-full object-cover md:object-contain" alt="" /></div> */}
+               
+ {/* <div className=" w-60 h-72 relative top-60 left-40 md:left-10">  <img src="/globos.png" className="w-full h-full object-cover" alt="" /></div> */}
+
+
+
+ <div className=" w-full h-72 md:h-auto md:w-screen ">  
+ 
+
+ <Shapes/>
+ 
+ 
+ 
+ </div>
+
+
+
+                </Background>
+
+                
+     
+     
+         </Parallax>
+     
 </section>
 
 )}
 </InView>
 
+
 <section>
 
-  <Swiper
-        effect={'flip'}
-        grabCursor={true}
-        pagination={true}
-        navigation={false}
-        modules={[EffectFlip, Pagination, Autoplay]}
-        autoplay={{ delay: 7000 }} // Configuración del intervalo de autoplay en milisegundos (4 segundos)
-
-        className="mySwiper"
-      >
-        <SwiperSlide className="h-auto mb-3 overflow-hidden">
-<div className="flex flex-col gap-3 justify-evenly items-center  w-full h-full gap-3 p-4">
-
-<h4 className="justify-self-start	text-4xl w-full text-start">Steps:  <span className="text-yellow-400">01</span></h4> 
-
-<ul>
-
-  <li className="text-2xl w-full text-center mb-5 font-bold		">Insight Gathering </li>
-  <li className="text-lg text-gray-400 mb-3">Step 1: We dive deep into understanding your core audience - who they are, their needs, and where they engage. At Produktivo, we believe in the power of informed insights to drive successful digital strategies.</li>
-  <div className="w-50 h-auto  overflow-hidden "> <img src="./img/witness/1.png"  className="w-full h-full object-cover" alt="" /></div>
-
-</ul>
-
-</div>
-
-        </SwiperSlide>
-        <SwiperSlide className="h-auto mb-3 overflow-hidden">
-
-        <div className="flex flex-col gap-3 justify-evenly items-center  w-full h-full gap-3 p-4">
-
-<h4 className="justify-self-start	text-4xl w-full text-start">Steps:  <span className="text-yellow-400">02</span></h4> 
-
-<ul>
-
-  <li className="text-2xl w-full text-center mb-5 font-bold		">Strategic Development </li>
-  <li className="text-lg text-gray-400 mb-3">Step 2: At Produktivo, we craft tailored strategies focused not just on attracting leads but on converting them into loyal customers. Our approach goes beyond the initial sale, emphasizing customer retention and long-term loyalty.</li>
-  <div className="w-50 h-auto  overflow-hidden "> <img src="./img/witness/2.png"  className="w-full h-full object-cover" alt="" /></div>
-
-</ul>
-
-</div>
-    
-        </SwiperSlide>
-        <SwiperSlide className="h-auto mb-3 overflow-hidden">
-
-        <div className="flex flex-col gap-3 justify-evenly items-center  w-full h-full gap-3 p-4">
-
-<h4 className="justify-self-start	text-4xl w-full text-start">Steps:  <span className="text-yellow-400">03</span></h4> 
-
-<ul>
-
-  <li className="text-2xl w-full text-center mb-5 font-bold		">Execution Excellence </li>
-  <li className="text-lg text-gray-400 mb-3"> Step 3: We provide personalized consultation for each unique strategy, supported by our skilled team specializing in both content creation, system solutions and digital marketing. With Produktivo, every implementation is a step towards achieving your brand's digital aspirations.</li>
-
-  <div className="w-50 h-auto  overflow-hidden "> <img src="./img/witness/3.png"  className="w-full h-full object-cover" alt="" /></div>
-
-</ul>
-
-</div>
-       </SwiperSlide>
-       
-      </Swiper>
-
-
+  <MySwiper/>
   
 </section>
 
@@ -135,9 +114,9 @@ const Home = () => {
 <section ref={ref} className={inView ? 'services' : ''}>
 
 
-  <ul className="w-full p-1">
+  <ul className="w-full p-1 md:flex flex-wrap ">
 
-<li className="flex flex-col gap-3 w-11/12 p-5">
+<li className="flex flex-col gap-3 w-11/12 p-5 md:w-1/3">
 
 <div className="">
   <img src="img/system.png" alt="" width="70px" />
@@ -152,7 +131,7 @@ const Home = () => {
 </li>
 
 
-<li className="flex flex-col gap-3 w-11/12 p-5">
+<li className="flex flex-col gap-3 w-11/12 p-5 md:w-1/3">
 
 <div className="">
   <img src="img/content.png" alt="" width="70px" />
@@ -167,7 +146,7 @@ const Home = () => {
 
 
 
-<li className="flex flex-col gap-3 w-11/12 p-5">
+<li className="flex flex-col gap-3 w-11/12 p-5 md:w-1/3">
 
 <div className="">
   <img src="img/social.png" alt="" width="70px" />
@@ -180,7 +159,7 @@ const Home = () => {
 </li>
 
 
-<li className="flex flex-col gap-3 w-11/12 p-5">
+<li className="flex flex-col gap-3 w-11/12 p-5 md:w-1/3">
 
 <div className="">
   <img src="img/consultation.png" alt="" width="70px"/>
@@ -193,7 +172,7 @@ const Home = () => {
 </li>
 
 
-<li className="flex flex-col gap-3 w-11/12 p-5">
+<li className="flex flex-col gap-3 w-11/12 p-5 md:w-1/3">
 
 <div className="">
   <img src="img/seo.png" alt="" width="70px" />
@@ -209,7 +188,7 @@ const Home = () => {
 </li>
 
 
-<li className="flex flex-col gap-3 w-11/12 p-5">
+<li className="flex flex-col gap-3 w-11/12 p-5 md:w-1/3">
 
 <div className="">
   <img src="img/targeted.png" alt="" width="70px"/>
@@ -224,7 +203,7 @@ const Home = () => {
 </li>
 
 
-<li className="flex flex-col gap-3 w-11/12 p-5">
+<li className="flex flex-col gap-3 w-11/12 p-5 md:w-1/3">
 
 <div className="">
   <img src="img/emaily.png" alt="" width="70px" />
@@ -241,7 +220,7 @@ const Home = () => {
 
 
 
-<li className="flex flex-col gap-3 w-11/12 p-5">
+<li className="flex flex-col gap-3 w-11/12 p-5 md:w-1/3">
 
 <div className="">
   <img src="img/ads.png" alt="" width="70px"/>
@@ -255,7 +234,7 @@ const Home = () => {
 </li>
 
 
-<li className="flex flex-col gap-3 w-11/12 p-5">
+<li className="flex flex-col gap-3 w-11/12 p-5 md:w-1/3">
 
 <div className="">
   <img src="img/management.png" alt="" width="70px"/>
@@ -269,7 +248,7 @@ const Home = () => {
 
 </li>
 
-<li className="flex flex-col gap-3 w-11/12 p-5">
+<li className="flex flex-col gap-3 w-11/12 p-5 md:w-1/3">
 
 <div className="">
   <img src="img/virtual.png" alt="" width="70px"/>
@@ -358,8 +337,6 @@ const Home = () => {
         pagination={false}
         navigation={true}
         modules={[ Pagination, Navigation]}
-        autoplay={{ delay: 7000 }} // Configuración del intervalo de autoplay en milisegundos (4 segundos)
-
         className="mySwiper w-screen"
       >
         <SwiperSlide className="w-full h-auto flex flex-col justify-around">
@@ -416,25 +393,26 @@ which has been on my list of things I want to do for over 2 years. She is very c
 
 
 
-  <section className="overflow-hidden w-full">
+  <section className="overflow-hidden w-full md:flex">
 <InView triggerOnce="false">
     {({ inView, ref, entry }) => (
 
 
-<div ref={ref} className={inView ? 'animationRight flex flex-col p-3 gap-3' : ''}>
+<div ref={ref} className={inView ? 'animationRight flex flex-col p-3 gap-3 md:flex-row' : ''}>
 
+<div className="w-full md:w-1/2 flex flex-col justify-around gap-5">
 
 <strong className="text-xl">PRODUKTIVO CLIENT PORTAL </strong>
 <h3 className="text-2xl">All-in-One<span className="font-extrabold"> Management</span> and Insights<span className="font-extrabold"> at Your</span> Fingertips
 
 </h3>
 
-<p className="mb-5 text-gray-400">Our digital marketing solutions are built round your business. Our team work transparently, giving you control over your marketing activities. The Produktivo Client Portal is your one-stop hub for managing your brand's online presence and tasks. This intuitive platform provides access to all your digital tools, streamlines brand management, and delivers real-time performance analytics, ensuring you're always in the driver's seat of your digital journey.
+<p className="mb-5 text-gray-400 ">Our digital marketing solutions are built round your business. Our team work transparently, giving you control over your marketing activities. The Produktivo Client Portal is your one-stop hub for managing your brand's online presence and tasks. This intuitive platform provides access to all your digital tools, streamlines brand management, and delivers real-time performance analytics, ensuring you're always in the driver's seat of your digital journey.
 
 </p>
+</div>
 
-
-<div className="w-full h-72">
+<div className="w-full h-72 md:w-1/2">
 
 <img src="marketing.jpeg" alt=""  className="w-full h-full object-cover"/>
 
@@ -451,20 +429,20 @@ which has been on my list of things I want to do for over 2 years. She is very c
 
 
 
-<div className="relative w-full  h-60">
+<div className="relative w-full  h-96">
 
 <Parallax className="pill"
  strength={-400}
  style={{
   position: 'absolute',
-  top:"40px",
+  top:"30px",
   right:"0px"
   
 }}>
 
         <Background className="w-screen h-auto"  >
      
-<section className="flex flex-col p-3 gap-3 bg-yellow-400">
+<section className="flex flex-col p-3 gap-3 bg-yellow-400 pt-40">
 
 <strong className="text-xl">Partners</strong>
 <h3 className="text-2xl text-center">All Trusted Brands

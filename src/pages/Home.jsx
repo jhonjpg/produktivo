@@ -14,6 +14,7 @@ import { InView } from 'react-intersection-observer';
 import { Parallax, Background } from 'react-parallax';
 import MySwiper from '../components/MySwiper';
 import Shapes from '../components/Shapes';
+import UrlContent from '../components/UrlContent';
 
 
 const Home = () => {
@@ -296,17 +297,17 @@ const Home = () => {
 
 <strong className="w-full text-lg text-center mt-60 z-30">TRUSTED BY THE BEST CLIENTS</strong>
 
-<ul className="bestClient w-full flex flex-wrap mt-3 gap-8 z-20 uppercase font-extrabold text-lg justify-around bg-gray-800/25">
+<ul className="bestClient w-full flex flex-wrap mt-3 mb-5 gap-8 z-20 uppercase font-extrabold text-lg justify-around bg-gray-800/25 md:w-1/2 ">
 
-<li className="w-24 h-30 bg-white overflow-hidden"><img src="img/clients/client1.png" className="w-full h-full object-contain" alt="" /></li>
-<li className="w-24 h-30 bg-black"><img src="img/clients/client2.png" className="w-full h-full object-contain" alt="" /></li>
-<li className="w-24 h-30 bg-white"><img src="img/clients/client3.png" className="w-full h-full object-contain" alt="" /></li>
-<li className="w-24 h-30"><img src="img/clients/client4.png" className="w-full h-full object-contain" alt="" /></li>
-<li className="w-24 h-30 bg-white p-1"><img src="img/clients/client5.png" className="w-full h-full object-contain" alt="" /></li>
-<li className="w-24 h-30"><img src="img/clients/client6.png" className="w-full h-full object-contain" alt="" /></li>
-<li className="w-24 h-30 bg-white"><img src="img/clients/client7.png" className="w-full h-full object-contain" alt="" /></li>
-<li className="w-24 h-30 bg-black"><img src="img/clients/client8.png" className="w-full h-full object-contain" alt="" /></li>
-<li className="w-24 h-30 p-1 bg-white"><img src="img/clients/client9.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 bg-white overflow-hidden md:w-40"><img src="img/clients/client1.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 bg-black md:w-40"><img src="img/clients/client2.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 bg-white md:w-40"><img src="img/clients/client3.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 md:w-40"><img src="img/clients/client4.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 md:w-40 bg-white p-1"><img src="img/clients/client5.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 md:w-40"><img src="img/clients/client6.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 bg-white md:w-40"><img src="img/clients/client7.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 bg-black md:w-40"><img src="img/clients/client8.png" className="w-full h-full object-contain" alt="" /></li>
+<li className="w-24 h-30 p-1 bg-white md:w-40"><img src="img/clients/client9.png" className="w-full h-full object-contain" alt="" /></li>
 {/* <li className="w-24 h-30 bg-whites"><img src="img/clients/client10.png" className="w-full h-full object-contain" alt="" /></li> */}
 
 </ul>
@@ -442,24 +443,27 @@ which has been on my list of things I want to do for over 2 years. She is very c
 
         <Background className="w-screen h-auto"  >
      
-<section className="flex flex-col p-3 gap-3 bg-yellow-400 pt-40">
+<section className="flex flex-col p-3 gap-3 bg-yellow-400 pt-40 md:items-center">
 
-<strong className="text-xl">Partners</strong>
-<h3 className="text-2xl text-center">All Trusted Brands
+<strong className="text-3xl w-full text-start">Partners</strong>
+<h3 className="text-2xl  w-full text-center">All Trusted Brands
 </h3>
 
-<ul className="w-full flex flex-wrap p-8 gap-8 justify-between text-xl items-center font-bold">
-    <li className="w-24 h-30 p-1 bg-white"><img src="img/tools/tools1.png" className="w-full h-full object-contain" alt="" /></li>
-    <li className="w-24 h-30 p-1 bg-white"><img src="img/tools/tools2.png" className="w-full h-full object-contain" alt="" /></li>
-    <li className="w-24 h-30 p-1 bg-white"><img src="img/tools/tools3.png" className="w-full h-full object-contain" alt="" /></li>
-    <li className="w-24 h-30 p-1 bg-white"><img src="img/tools/tools4.png" className="w-full h-full object-contain" alt="" /></li>
+<ul className="w-full flex flex-wrap p-8 gap-8 justify-between text-xl items-center font-bold md:w-1/2 md:justify-center md:items-center">
+    <li className="w-24 h-30 p-1 bg-white md:1/3 overflow-hidden"><img src="img/tools/tools1.png" className="w-full h-full object-contain" alt="" /></li>
+    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700 md md:bg-white text-3xl">Constant Contact</li>
 
-    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700">Constant Contact</li>
-    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-center text-gray-700">Google</li>
-    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700">Facebook</li>
-    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700">Instagram</li>
-    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700">Dubsado</li>
-    <li className="w-1/3 font-extrabold p-1 bg-white text-sm text-center text-gray-700">Honeybook</li>
+    <li className="w-24 h-30 p-1 bg-white md:1/3 overflow-hidden"><img src="img/tools/tools4.png" className="w-full h-full object-contain" alt="" /></li>
+    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-center text-gray-700 md:bg-white text-3xl">Google</li>
+
+    <li className="w-24 h-30 p-1 bg-white md:1/3 overflow-hidden"><img src="img/tools/tools2.png" className="w-full h-full object-contain" alt="" /></li>
+
+    <li className="w-24 h-30 p-1 bg-white md:1/3 overflow-hidden"><img src="img/tools/tools3.png" className="w-full h-full object-contain" alt="" /></li>
+
+    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700 md:bg-white text-3xl">Facebook</li>
+    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700 md:bg-white text-3xl">Instagram</li>
+    <li className="w-1/3 font-extrabold p-1 bg-white text-lg text-center text-gray-700 md:bg-white text-3xl">Dubsado</li>
+    <li className="w-1/3 font-extrabold p-1 bg-white text-sm text-center text-gray-700 md:bg-white text-3xl">Honeybook</li>
   </ul>
 
 </section>
@@ -471,6 +475,7 @@ which has been on my list of things I want to do for over 2 years. She is very c
     </div>
 
     <section className="w-full flex flex-col p-4 gap-3">
+
 
 <strong className="text-lg">TELL US MORE</strong>
 <h3 className="text-2xl  text-center mb-5">Let’s discuss your project

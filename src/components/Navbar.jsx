@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
 
@@ -11,6 +11,22 @@ const Navbar = () => {
   const [showDesign, setShowDesign] = useState(false);
   const [showResorces, setShowResorces] = useState(false);
 
+  
+  
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      // Puedes ajustar el umbral según tu diseño
+      setShowMenu(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   // Function to toggle the visibility of the nested list
   const toggleVisibility = (setter) => {
@@ -19,38 +35,53 @@ const Navbar = () => {
   return (
 <>
 
-<nav className="spacegray flex w-full justify-between items-center  h-20 fixed z-50 overflow-hidden	">
+<nav className="spacegray flex w-full justify-between items-center h-20 fixed z-50 overflow-hidden">
+      <Link onClick={() => setShowMenu(false)} to="produktivo/">
+        <div className="w-28 h-full flex items-center justify-center text-white scale-105">
+          <img src="produktivo02.png" alt="" className="w-full h-full object-cover" />
+        </div>
+      </Link>
 
-<Link onClick={() => setShowMenu(false)}  to="produktivo/"> <div className="w-28 h-full flex items-center justify-center text-white  scale-105	">  <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
-</Link>
-<div className=" w-28 flex  justify-center items-center  h-full"> 
+      {windowWidth <= 768 ? (
+        <div className="w-28 flex justify-center items-center h-full">
+          <div onClick={() => toggleVisibility(setShowMenu)} className="w-1/2 flex justify-center items-center h-full">
+            {!showMenu && (
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-list" viewBox="0 0 16 16">
+                <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>
+            )}
 
-<div className="w-1/2 flex justify-center items-centerh-full">
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" className="bi bi-search" viewBox="0 0 16 16">
-  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-</svg></div>
+            {showMenu && (
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+              </svg>
+            )}
+          </div>
+        </div>
+
+      ) : (
+        <ul className="text-white text-lg flex gap-5 w-2/4 justify-evenly items-center ">
+          <Link onClick={() => setShowMenu(false)} to="produktivo/"><li className="text-center">Home</li></Link>
+
+          {/* ... Otros enlaces ... */}
 
 
-<div onClick={() => toggleVisibility(setShowMenu)} className="w-1/2 flex justify-center items-center h-full">
-  
-{!showMenu && (
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-list" viewBox="0 0 16 16">
-          <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-        </svg>
+          <li onClick={() => toggleVisibility(setShowServices)}>
+            Services{showServices ? ' -' : ' +'}
+          </li>
+
+
+          <li onClick={() => toggleVisibility(setShowResorces)}>
+            Resorces{showResorces ? ' -' : ' +'}
+          </li>
+
+          <Link onClick={() => setShowMenu(false)} to="produktivo/contact"><li>Contact Us</li></Link>
+
+        </ul>
+
       )}
-
-      {showMenu && (
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-x-lg" viewBox="0 0 16 16">
-          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-        </svg>
-      )}
-
-</div>
-
-</div>
-
-
-
+{windowWidth >= 768 ? (
+  <strong className="md:w-50 mr-10 text-2xl text-white">+1 (906)-209-4054</strong>
+) : null}
 
 </nav>
 
@@ -61,7 +92,7 @@ const Navbar = () => {
 <div className="w-10/12	 h-28 scale-105"> <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
 
 <ul className="text-white text-lg flex flex-col gap-5">
-          <li className="mb-4">Client Hub</li>
+<Link onClick={() => setShowMenu(false)}  to="produktivo/">   <li className="mb-4">Home</li></Link> 
 
              <li onClick={() => toggleVisibility(setShowServices)}>
             Services{showServices ? ' -' : ' +'}

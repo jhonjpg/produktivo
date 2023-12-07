@@ -60,7 +60,7 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 
 
 
-<section className="  flex flex-col p-5 justify-center items-center gap-1 md:flex-wrap md:flex-row md:items-start ">
+<section className="  flex flex-col  p-5 justify-center items-center gap-1 md:flex-wrap md:flex-row md:items-start ">
 
 
 <h4 className="text-xl w-full">We Deliver
@@ -69,7 +69,7 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 
 
 
-<ol className="flex flex-col p-6 gap-1 text-black md:w-60">
+<ol className="flex flex-col p-3 gap-1 text-black md:w-60">
 
 <strong>	Social Content</strong>
 
@@ -85,7 +85,7 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 
 
 
-<ol className="flex flex-col p-6 gap-1 text-black md:w-60">
+<ol className="flex flex-col p-3 gap-1 text-black md:w-60">
 
 <strong>	Newsletter
 </strong>
@@ -106,7 +106,7 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 
 
 
-<ol className="flex flex-col p-6 gap-1 text-black md:w-60 ">
+<ol className="flex flex-col p-3 gap-1 text-black md:w-60 ">
 
 
 <strong>	Weekly Blogs
@@ -135,7 +135,7 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 
 
 
-<ol className="flex flex-col p-6 gap-1 text-black md:w-60 ">
+<ol className="flex flex-col p-3 gap-1 text-black md:w-60 ">
 
 <strong>	Product Descriptions
 
@@ -162,7 +162,7 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 
 
 
-<ol className="flex flex-col p-6 gap-1 text-black md:w-60 ">
+<ol className="flex flex-col p-3 gap-1 text-black md:w-60 ">
 
 
 <strong>	Landing Pages & Funnels
@@ -198,7 +198,7 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 </section>
 
 
-<section className=" spacegray flex flex-col p-5 justify-center text-white items-center gap-3">
+<section className=" spacegray flex flex-col p-4 justify-center text-white items-center gap-3">
 
 
 <strong className="text-2xl text-yellow-400 ">Why Produktivo content marketing?
@@ -213,7 +213,7 @@ We work with you to build this strategy, aiming to boost inbound traffic and lea
 </p>
 
 
-<ol className="flex flex-col p-6 gap-1  w-full">
+<ol className="flex flex-col p-3 gap-1  w-full">
 
 
 

@@ -113,6 +113,37 @@ function Contact() {
 
 </form>
 
+
+<section className="  flex flex-col p-5 justify-center items-center gap-3 w-full">
+
+
+<strong className="text-2xl ">Discovery Call
+
+</strong>
+
+
+
+<p className="">Book a Discovery Call to see how we can help. We will cover your needs and goals, where you are starting, and possible solutions.
+</p>
+
+<button className="w-64 rounded-lg p-2 bg-blue-400 text-white text-lg">Book</button>
+
+<p>All initial consultations are conducted by our founder, Sueene.</p>
+
+
+<p>
+Sueene has over 11 years of experience as a business and marketing professional and has helped many companies reach their full business potential.
+
+</p>
+
+<hr className="p-1 w-80 bg-black/25 mt-2 mb-2" />
+
+<p>We hold the right to reschedule or cancel the meeting at any point.</p>
+
+
+</section>
+
+
 </section>
 
 </>

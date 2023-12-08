@@ -29,9 +29,9 @@ const LeadGeneration = () => {
         
 
 
-<section className="mb-2  ">
+<section className="mb-2 mt-5 ">
 
-<pre>OUR SERVICES
+<pre className="text-xl">OUR SERVICES
 </pre>
 <div className="w-full flex flex-col gap-5">
 
@@ -44,9 +44,9 @@ Find prospects in the market for your products or services & fill your calendar 
 
 </section>
 
-<section className="">
+<section className="md:flex flex-wrap w-full justify-evenly items-center ">
 
-    <div className="flex flex-col p-4 gap-3 spacegray">
+    <div className="flex flex-col p-4 gap-3 spacegray md:w-1/2 md:h-64">
 
         <span className="text-2xl text-yellow-400">01</span>
 
@@ -61,7 +61,7 @@ Find prospects in the market for your products or services & fill your calendar 
     </div>
 
 
-    <div className="flex flex-col p-3 gap-3 ">
+    <div className="flex flex-col p-3 gap-3 md:w-1/2 md:h-64 ">
 
         <span className="text-2xl ">02</span>
 
@@ -78,7 +78,7 @@ Find prospects in the market for your products or services & fill your calendar 
     </div>
 
 
-    <div className="flex flex-col p-4 gap-3 spacegray">
+    <div className="flex flex-col p-4 gap-3 spacegray md:w-1/2 md:h-64 mt-2">
 
 <span className="text-2xl text-yellow-400">03</span>
 
@@ -95,11 +95,11 @@ Find prospects in the market for your products or services & fill your calendar 
 </div>
 
 
-<div className="flex flex-col p-3 gap-3 ">
+<div className="flex flex-col p-3 gap-3 md:w-1/2 md:h-64 mt-2">
 
 <span className="text-2xl ">04</span>
 
-<strong className=" text-xl text-center w-full text-white">LinkedIn Automation
+<strong className=" text-xl text-center w-full ">LinkedIn Automation
 
 
 
@@ -113,7 +113,7 @@ Find prospects in the market for your products or services & fill your calendar 
 </div>
 
 
-<div className="flex flex-col p-3 gap-4 spacegray">
+<div className="flex flex-col p-3 gap-4 spacegray md:w-1/2 md:h-64 mt-3">
 
 <span className="text-2xl text-yellow-400">05</span>
 

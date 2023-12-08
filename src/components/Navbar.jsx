@@ -52,7 +52,7 @@ const Navbar = () => {
 
 <nav className="spacegray flex w-full justify-between items-center h-20 fixed z-50 ">
       <Link onClick={() => setShowMenu(false)} to="/produktivo">
-        <div className="w-28 h-full flex items-center justify-center text-white scale-105">
+        <div className="w-28 h-full flex items-center justify-center text-white scale-105 md:scale-150 md:ml-20">
           <img src="produktivo02.png" alt="" className="w-full h-full object-cover" />
         </div>
       </Link>

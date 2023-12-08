@@ -30,8 +30,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!showMenu) {
-        // Lógica de desplazamiento aquí
+      if (window.innerWidth <= 768) {
+        setShowMenu(true);
+        // Additional logic if needed
       }
     };
   
@@ -40,7 +41,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [showMenu]);
+  }, []);
   
   // Function to toggle the visibility of the nested list
   const toggleVisibility = (setter) => {

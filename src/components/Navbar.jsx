@@ -19,7 +19,6 @@ const Navbar = () => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
       // Puedes ajustar el umbral según tu diseño
-      setShowMenu(window.innerWidth <= 768);
     };
 
     window.addEventListener('resize', handleResize);

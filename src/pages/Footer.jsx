@@ -27,13 +27,13 @@ const Footer = () => {
 
 <strong className="text-yellow-400 w-full text-xl ">Site Menu</strong>
 
-<Link >Services</Link>
-<Link >Resources</Link>
-<Link >Contact Us</Link>
+<Link onClick={() => setShowMenu(false)}  to="#services"> Services</Link>
+<Link  onClick={() => setShowMenu(false)}  to="#">Resources</Link>
+<Link to="produktivo/contact">Contact Us</Link>
 
-<Link  to="/cookie&pilicies">Cookie Policies
+<Link  to="produktivo/cookie&pilicies">Cookie Policies
 </Link> 
-<Link  to="/privacy&policy
+<Link  to="produktivo/privacy&policy
 ">Privacy Policy
 </Link> 
 
@@ -44,11 +44,11 @@ const Footer = () => {
 
 <strong className="text-yellow-400 w-full text-xl  ">Services</strong>
 
-<Link>Consultation</Link>
-<Link>Virtual Business Support</Link>
-<Link>System Implementation</Link>
-<Link>Marketing</Link> 
-<Link>Social Media
+<Link  to="produktivo/consultation">  <li>Consultation</li></Link> 
+            <Link  to="produktivo/virtual&business&support">   <li>Virtual Business Support</li></Link> 
+            <Link  to="produktivo/system&implementation">   <li>System Implementation</li></Link> 
+            <Link  onClick={() => setShowMenu(false)}  to="#">Marketing</Link> 
+<Link to="produktivo/social&media">Social Media
 </Link> 
 
 

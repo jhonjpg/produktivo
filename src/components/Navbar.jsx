@@ -28,15 +28,31 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!showMenu) {
+        // Lógica de desplazamiento aquí
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [showMenu]);
+  
   // Function to toggle the visibility of the nested list
   const toggleVisibility = (setter) => {
     setter((prevState) => !prevState);
+    // setter(!showMenu);
+
   };
   return (
 <>
 
-<nav className="spacegray flex w-full justify-between items-center h-20 fixed z-50 overflow-hidden">
-      <Link onClick={() => setShowMenu(false)} to="produktivo/">
+<nav className="spacegray flex w-full justify-between items-center h-20 fixed z-50 ">
+      <Link onClick={() => setShowMenu(false)} to="/produktivo">
         <div className="w-28 h-full flex items-center justify-center text-white scale-105">
           <img src="produktivo02.png" alt="" className="w-full h-full object-cover" />
         </div>
@@ -62,28 +78,76 @@ const Navbar = () => {
         <ul className="text-white text-lg flex gap-5 w-2/4 justify-evenly items-center ">
           <Link onClick={() => setShowMenu(false)} to="produktivo/"><li className="text-center">Home</li></Link>
 
-          {/* ... Otros enlaces ... */}
 
 
-          <li onClick={() => toggleVisibility(setShowServices)}>
-            Services{showServices ? ' -' : ' +'}
-          </li>
+          <li className="group relative">
+  Services{showServices ? ' -' : ' +'}
+  <ul className={`text-base ml-5 flex flex-col gap-1 absolute top-full left-0 ${showServices ? 'block' : 'hidden'} group-hover:block bg-gray-400 p-3 flex flex-col gap-10 w-60`}>
+    <Link className=" hover:text-gray-700"onClick={() => setShowMenu(false)} to="produktivo/consultation">
+      <li>Consultation</li>
+    </Link>
+    <Link className=" hover:text-gray-700"onClick={() => setShowMenu(false)} to="produktivo/virtual&business&support">
+      <li>Virtual Business Support</li>
+    </Link>
+    <Link className=" hover:text-gray-700"onClick={() => setShowMenu(false)} to="produktivo/system&implementation">
+      <li>System Implementation</li>
+    </Link>
+    <li className="cursor-pointer hover:text-gray-700" onClick={() => toggleVisibility(setShowMarketing)}>
+      Marketing{showMarketing ? ' -' : ' +'}
+    </li>
+    {showMarketing && (
+      <ul className="text-sm ml-2 flex flex-col gap-1">
+        <Link className=" hover:text-gray-700"onClick={() => setShowMenu(false)} to="produktivo/content&marketing">
+          <li>Content Marketing</li>
+        </Link>
+        <Link  className=" hover:text-gray-700"onClick={() => setShowMenu(false)} to="produktivo/email&marketing">
+          <li>Email Marketing</li>
+        </Link>
+        <Link className=" hover:text-gray-700"  onClick={() => setShowMenu(false)} to="produktivo/digital&ads">
+          <li>Digital Ads</li>
+        </Link>
+        <Link className=" hover:text-gray-700" onClick={() => setShowMenu(false)} to="produktivo/lead&generation">
+          <li>Lead Generation</li>
+        </Link>
+      </ul>
+    )}
+    <Link className=" hover:text-gray-700" onClick={() => setShowMenu(false)} to="produktivo/social&media">
+      <li>Social Media</li>
+    </Link>
+  </ul>
+</li>
 
 
-          <li onClick={() => toggleVisibility(setShowResorces)}>
-            Resorces{showResorces ? ' -' : ' +'}
-          </li>
 
+
+<li className="group relative">
+Resorces{showServices ? ' -' : ' +'}
+  <ul className={`text-base ml-5 flex flex-col gap-1 absolute top-full left-0 ${showServices ? 'block' : 'hidden'} group-hover:block bg-gray-400 p-3 flex flex-col gap-10 w-60`}>
+    <Link className=" hover:text-gray-700" onClick={() => setShowMenu(false)} to="produktivo/blog">
+      <li>blog</li>
+    </Link>
+    <Link className=" hover:text-gray-700" onClick={() => setShowMenu(false)} to="produktivo/virtual&business&support">
+      <li>Suscribe to Newslette</li>
+    </Link>
+    
+  </ul>
+</li>
+
+
+       
           <Link onClick={() => setShowMenu(false)} to="produktivo/contact"><li>Contact Us</li></Link>
 
         </ul>
 
       )}
 {windowWidth >= 768 ? (
-  <strong className="md:w-50 mr-10 text-2xl text-white">+1 (906)-209-4054</strong>
+  <strong className="md:w-50 mr-10 text-1xl text-white">+1 (906)-209-4054</strong>
 ) : null}
 
 </nav>
+
+
+
 
 {showMenu && (
 
@@ -94,7 +158,7 @@ const Navbar = () => {
 <ul className="text-white text-lg flex flex-col gap-5">
 <Link onClick={() => setShowMenu(false)}  to="/produktivo">   <li className="mb-4">Home</li></Link> 
 
-             <li onClick={() => toggleVisibility(setShowServices)}>
+             <li  onClick={() => toggleVisibility(setShowServices)}>
             Services{showServices ? ' -' : ' +'}
           </li>
           {showServices && (

@@ -48,12 +48,12 @@ In the dynamic world of social media, the potential to highlight your expertise,
 
 </section>
 
-<section className="flex flex-col p-3 gap-3 spacegray ">
+<section className="flex flex-col p-3 gap-3 spacegray md:w-1/2 md:m-auto ">
 
-<strong className="text-yellow-400 text-sm text-center w-full">We work with all major social media platforms
+<strong className="text-white text-lg text-center w-full">We work with all major social media platforms
 </strong>
 
-<ul className="flex justify-evenly items-center flex-wrap p-2 gap-1 text-white w-full">
+<ul className="flex justify-evenly items-center flex-wrap p-2 gap-1 text-white w-full ">
 
 
 

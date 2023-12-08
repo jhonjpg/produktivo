@@ -112,10 +112,10 @@ const Home = () => {
 <InView triggerOnce="false">
     {({ inView, ref, entry }) => (
 
-<section ref={ref} className={inView ? 'services' : ''}>
+<section  id="services" ref={ref} className={inView ? 'services' : ''}>
 
 
-  <ul className="w-full p-1 md:flex flex-wrap ">
+  <ul  className="w-full p-1 md:flex flex-wrap ">
 
 <li className="flex flex-col gap-3 w-11/12 p-5 md:w-1/3">
 
@@ -277,7 +277,7 @@ const Home = () => {
 
 <InView triggerOnce="false">
     {({ inView, ref, entry }) => (
-      <section ref={ref} className={inView ? ' animationUp spacegray w-screen h-screen flex flex-col w-full items-center p-3 pt-10 gap-2 relative text-white ' : 'spacegray w-screen h-screen flex flex-col w-full items-center p-3 pt-10 gap-2 relative text-white  opacity-0'}>
+      <section ref={ref} className={inView ? ' animationUp spacegray w-screen h-screen flex flex-col w-full items-center p-3 pt-10 gap-2 relative text-white pb-8 ' : 'spacegray w-screen h-screen flex flex-col w-full items-center p-3 pt-10 gap-2 relative text-white  opacity-0'}>
 
 <h3 className="font-extrabold text-xl	">MAKE THE RIGHT DECISION</h3>
 
@@ -491,7 +491,7 @@ which has been on my list of things I want to do for over 2 years. She is very c
   <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Email" />
   <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Website" />
 
-  <div className="flex flex-col gap-2">
+  <div  className="flex flex-col gap-2">
     <label className="flex gap-2">
       <input type="checkbox" name="services" value="Consulting" />
       Consulting

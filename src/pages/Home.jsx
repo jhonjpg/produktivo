@@ -474,15 +474,15 @@ which has been on my list of things I want to do for over 2 years. She is very c
     </Parallax>
     </div>
 
-    <section className="w-full flex flex-col p-4 gap-3">
+    <section className="w-full flex flex-col p-4 gap-3 md:flex-row flex-wrap">
 
 
-<strong className="text-lg">TELL US MORE</strong>
-<h3 className="text-2xl  text-center mb-5">Let’s discuss your project
+<strong className="text-lg md:w-full">TELL US MORE</strong>
+<h3 className="text-2xl  text-center mb-5 md:w-full">Let’s discuss your project
 
 </h3>
 
-<form action="w-11/12 flex flex-col gap-5">
+<form className="w-full flex flex-col gap-5 md:w-1/2">
 
   <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="First Name" />
 
@@ -547,6 +547,8 @@ which has been on my list of things I want to do for over 2 years. She is very c
   <textarea name="" id="" cols="30" rows="5" placeholder="Let's us know how we can help you" className="border-2 border-solid border-gray-300 w-full p-8 mt-5"></textarea>
 
 </form>
+
+<div className="hidden md:block	md:w-1/3	"> <img src="arrova.png" className="w-full h-full object-fit-contain" alt="" /></div>
 
 </section>
 

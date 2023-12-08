@@ -31,7 +31,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.innerWidth <= 768) {
-        setShowMenu(true);
+        setShowMenu(false);
         // Additional logic if needed
       }
     };

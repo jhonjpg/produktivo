@@ -24,7 +24,7 @@ const Footer = () => {
 <div className="w-28 h-full flex items-center justify-center text-white  scale-150 md:w-24 	">  <img src="produktivo02.png" alt=""  className="w-full h-full object-cover"/></div>
 </Link>
 
-<ul className="w-full flex flex-wrap flex-col text-white gap-3 text-lg md:w-40 ">
+<ul className="w-full flex flex-wrap flex-col text-white gap-3 text-lg md:w-40 text-sm	 ">
 
 <strong className="text-yellow-400 w-full text-xl ">Site Menu</strong>
 
@@ -41,7 +41,7 @@ const Footer = () => {
 </ul>
 
 
-<ul className="w-full flex flex-col flex-wrap justify-between items-start text-white gap-3 text-lg md:w-40 ">
+<ul className="w-full flex flex-col flex-wrap justify-between items-start text-white gap-3 text-lg md:w-40 text-sm  ">
 
 <strong className="text-yellow-400 w-full text-xl  ">Services</strong>
 
@@ -55,7 +55,7 @@ const Footer = () => {
 
 </ul>
 
-<div className="w-full flex flex-col gap-3 md:w-40 ">
+<div className="w-full flex flex-col gap-3 md:w-28 ">
 
 
 <ul className="w-full flex flex-col justify-center items-center text-white">

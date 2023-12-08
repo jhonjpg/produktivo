@@ -1,5 +1,7 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const LeadGeneration = () => {
   return (
@@ -146,11 +148,10 @@ Find prospects in the market for your products or services & fill your calendar 
 </strong>
 
 
-
-<button className="w-64 rounded-lg p-2 bg-blue-400 text-white text-lg"> Book a call
+<Link to="https://portal.weareproduktivo.com/public/appointment-scheduler/656a34b28b362056dffe942e/schedule"> <button className="w-64 rounded-lg p-2 bg-blue-400 text-white text-lg hover:bg-blue-300"> Book a call
 
 </button>
-
+</Link>
 <p> <strong>We’d love to hear from you!</strong>  Save a slot, and jump on a quick zoom call to get some advice on your next steps to success.</p>
 
 

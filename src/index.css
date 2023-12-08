@@ -13,8 +13,16 @@ body {
     background-color: #cc952c !important;
 }
 
+.bg-blue-400 {
+    background-color: #102533 !important;
+}
+
 .text-yellow-400 {
     color: #cc952c !important;
+}
+
+hr {
+    padding: 1px !important;
 }
 
 nav {
@@ -62,6 +70,10 @@ nav {
     width: 1200px;
     height: 800px;
     left: -400px;
+}
+
+.form-page {
+    height: 230vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -137,6 +149,11 @@ nav {
     background-image: url("/world.png");
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+#bestClient {
+    height: 3000px !important;
+    background-color: black !important;
 }
 
 .bestClient li:nth-child(1) {
@@ -238,4 +255,18 @@ nav {
     background-color: white;
     border-right: 1px solid black;
     /* background: linear-gradient(right rgb(20, 44, 0), rgb(14, 32, 0)); */
+}
+
+.form-page {
+    height: 170vh !important;
+}
+
+@media screen and (min-width: 860px) {
+    .form-page {
+        height: 170vh !important;
+    }
+}
+
+footer {
+    font-family: 'Times New Roman', serif;
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Consultation = () => {
   return (
@@ -118,8 +119,11 @@ const Consultation = () => {
 <p className="">Book a Discovery Call to see how we can help. We will cover your needs and goals, where you are starting, and possible solutions.
 </p>
 
-<button className="w-64 rounded-lg p-2 bg-blue-400 text-white text-lg">Book</button>
 
+<Link to="https://portal.weareproduktivo.com/public/appointment-scheduler/656a34b28b362056dffe942e/schedule"> <button className="w-64 rounded-lg p-2 bg-blue-400 text-white text-lg hover:bg-blue-300"> Book a call
+
+</button>
+</Link>
 <p>All initial consultations are conducted by our founder, Sueene.</p>
 
 

@@ -15,6 +15,7 @@ import { Parallax, Background } from 'react-parallax';
 import MySwiper from '../components/MySwiper';
 import Shapes from '../components/Shapes';
 import UrlContent from '../components/UrlContent';
+import InquiryForm from '../helper/InquiryForm';
 
 
 const Home = () => {
@@ -277,7 +278,7 @@ const Home = () => {
 
 <InView triggerOnce="false">
     {({ inView, ref, entry }) => (
-      <section ref={ref} className={inView ? ' animationUp spacegray w-screen h-screen flex flex-col w-full items-center p-3 pt-10 gap-2 relative text-white pb-8 ' : 'spacegray w-screen h-screen flex flex-col w-full items-center p-3 pt-10 gap-2 relative text-white  opacity-0'}>
+      <section ref={ref} className={inView ? ' animationUp spacegray w-screen h-auto flex flex-col w-full items-center p-3 pt-10 gap-2 relative text-white pb-8 md:h-auto ' : 'spacegray w-screen h-screen flex flex-col w-full items-center p-3 pt-10 gap-2 relative text-white  opacity-0'}>
 
 <h3 className="font-extrabold text-xl	">MAKE THE RIGHT DECISION</h3>
 
@@ -297,7 +298,7 @@ const Home = () => {
 
 <strong className="w-full text-lg text-center mt-60 z-30">TRUSTED BY THE BEST CLIENTS</strong>
 
-<ul className="bestClient w-full flex flex-wrap mt-3 mb-5 gap-8 z-20 uppercase font-extrabold text-lg justify-around bg-gray-800/25 md:w-1/2 ">
+<ul className="bestClient w-full flex flex-wrap mt-3 mb-5 gap-8 z-20 uppercase font-extrabold text-lg justify-around bg-gray-800/25 overflow-hidden md:w-1/2 ">
 
 <li className="w-24 h-30 bg-white overflow-hidden md:w-40"><img src="img/clients/client1.png" className="w-full h-full object-contain" alt="" /></li>
 <li className="w-24 h-30 bg-black md:w-40"><img src="img/clients/client2.png" className="w-full h-full object-contain" alt="" /></li>
@@ -474,83 +475,30 @@ which has been on my list of things I want to do for over 2 years. She is very c
     </Parallax>
     </div>
 
+   
+   
     <section className="w-full flex flex-col p-4 gap-3 md:flex-row flex-wrap">
 
 
 <strong className="text-lg md:w-full">TELL US MORE</strong>
-<h3 className="text-2xl  text-center mb-5 md:w-full">Let’s discuss your project
+<h3 className="text-2xl  text-center  md:w-full">Let’s discuss your project
 
 </h3>
 
-<form className="w-full flex flex-col gap-5 md:w-1/2">
 
-  <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="First Name" />
-
-  <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Last Name" />
-  <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Phone" />
-  <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Email" />
-  <input type="text" className="w-full p-4 border-gray-300 border-2 border-solid mb-5" placeholder="Website" />
-
-  <div  className="flex flex-col gap-2">
-    <label className="flex gap-2">
-      <input type="checkbox" name="services" value="Consulting" />
-      Consulting
-    </label>
-
-    <label className="flex gap-2">
-      <input type="checkbox" name="services" value="Content Marketing" />
-      Content Marketing
-    </label>
-
-    <label className="flex gap-2">
-      <input type="checkbox" name="services" value="Email Marketing" />
-      Email Marketing
-    </label>
-
-    <label className="flex gap-2">
-      <input type="checkbox" name="services" value="Digital Ads" />
-      Digital Ads
-    </label>
-
-    <label className="flex gap-2">
-      <input type="checkbox" name="services" value="SEO" />
-      SEO
-    </label>
-
-    <label className="flex gap-2">
-      <input type="checkbox" name="services" value="Brand Management" />
-      Brand Management
-    </label>
-
-    <label className="flex gap-2">
-      <input type="checkbox" name="services" value="Social Media" />
-      Social Media
-    </label>
-
-    <label className="flex gap-2">
-      <input type="checkbox" name="services" value="Web Design" />
-      Web Design
-    </label>
-
-    <label className="flex gap-2">
-      <input type="checkbox" name="services" value="Branding" />
-      Branding
-    </label>
-
-    <label className="flex gap-2">
-      <input type="checkbox" name="services" value="Other" />
-      Other
-    </label>
-  </div>
+<div className="w-full md:w-1/2  ">
+<InquiryForm/>
 
 
-  <textarea name="" id="" cols="30" rows="5" placeholder="Let's us know how we can help you" className="border-2 border-solid border-gray-300 w-full p-8 mt-5"></textarea>
+</div>
 
-</form>
 
 <div className="hidden md:block	md:w-1/3	"> <img src="arrova.png" className="w-full h-full object-fit-contain" alt="" /></div>
 
 </section>
+
+
+
 
 </>
 
